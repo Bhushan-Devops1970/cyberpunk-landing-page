@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obsidian Directive | Classified Horror Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="scanline" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Obsidian Directive home">
+        <span class="brand-mark"></span>
+        Obsidian Directive
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#archives">Archives</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#profiles">Profiles</a>
+        <a href="#faq">Files</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-art" aria-hidden="true">
+          <div class="vault-rings"></div>
+          <div class="tower tower-left"></div>
+          <div class="tower tower-right"></div>
+          <div class="monolith"></div>
+          <div class="fog fog-a"></div>
+          <div class="fog fog-b"></div>
+          <canvas id="particles" aria-hidden="true"></canvas>
+        </div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Restricted blacksite transmission // Level IX</p>
+          <h1>The Archive Remembers What Humanity Buried</h1>
+          <p class="hero-copy">
+            Descend into a classified universe of forbidden experiments, erased
+            bloodlines, and intelligence files that still whisper after death.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#archives">Open Dossier</a>
+            <a class="button ghost" href="#timeline">Trace Incidents</a>
+          </div>
+        </div>
+        <div class="status-panel glass reveal" aria-label="Archive status">
+          <span>Signal integrity</span>
+          <strong>13%</strong>
+          <div class="meter"><span></span></div>
+          <small>Unauthorized observer detected</small>
+        </div>
+      </section>
+
+      <section class="section" id="archives">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Classified Archives</p>
+          <h2>Artifacts Recovered From the Red Vault</h2>
+        </div>
+        <div class="archive-grid">
+          <article class="archive-card glass reveal">
+            <span class="artifact-icon">I</span>
+            <h3>The Veil Engine</h3>
+            <p>
+              A cathedral-sized machine that rendered entire districts missing
+              from memory, maps, and mourning records.
+            </p>
+            <button class="text-link" type="button">Decrypt fragment</button>
+          </article>
+          <article class="archive-card glass reveal">
+            <span class="artifact-icon">II</span>
+            <h3>Saint Kharon Mask</h3>
+            <p>
+              A polished obsidian relic worn by interrogators who returned with
+              another voice behind their own.
+            </p>
+            <button class="text-link" type="button">Decrypt fragment</button>
+          </article>
+          <article class="archive-card glass reveal">
+            <span class="artifact-icon">III</span>
+            <h3>Black Psalm Ledger</h3>
+            <p>
+              A living record that edits itself whenever a witness attempts to
+              speak a name from the lower archive.
+            </p>
+            <button class="text-link" type="button">Decrypt fragment</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="timeline">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Hidden Chronology</p>
+          <h2>Incidents the Directorate Denies</h2>
+        </div>
+        <div class="timeline-shell glass reveal">
+          <div class="timeline-controls" role="tablist" aria-label="Classified events">
+            <button class="active" type="button" data-event="0">2081</button>
+            <button type="button" data-event="1">2094</button>
+            <button type="button" data-event="2">2117</button>
+            <button type="button" data-event="3">2130</button>
+          </div>
+          <article class="timeline-file">
+            <p class="eyebrow" id="event-code">Event 2081-A</p>
+            <h3 id="event-title">The First Red Broadcast</h3>
+            <p id="event-copy">
+              Every screen below Sector V ignited with a symbol no analyst could
+              reproduce. The city slept for eleven minutes. The missing woke up
+              under the archive.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="profiles">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Persons of Interest</p>
+          <h2>Operatives, Oracles, and Survivors</h2>
+        </div>
+        <div class="profile-grid">
+          <article class="profile-card glass reveal">
+            <div class="portrait portrait-one"></div>
+            <h3>Director Vale</h3>
+            <p>Founder of the Ninth Choir and architect of the archive purge.</p>
+          </article>
+          <article class="profile-card glass reveal">
+            <div class="portrait portrait-two"></div>
+            <h3>Mara Voss</h3>
+            <p>Field cryptographer last recorded entering Door 0 with a pulse.</p>
+          </article>
+          <article class="profile-card glass reveal">
+            <div class="portrait portrait-three"></div>
+            <h3>The Witness</h3>
+            <p>Anonymous prisoner whose dreams predict sealed casualty reports.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section stats-section">
+        <div class="stat-grid glass reveal">
+          <div>
+            <strong data-count="731">0</strong>
+            <span>sealed files</span>
+          </div>
+          <div>
+            <strong data-count="49">0</strong>
+            <span>erased districts</span>
+          </div>
+          <div>
+            <strong data-count="13">0</strong>
+            <span>active signals</span>
+          </div>
+          <div>
+            <strong data-count="1">0</strong>
+            <span>surviving witness</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quote-section">
+        <div class="quote-grid">
+          <blockquote class="glass reveal">
+            “The archive does not store history. It hunts for what history is
+            trying to become.”
+            <cite>Archivist No. 6</cite>
+          </blockquote>
+          <blockquote class="glass reveal">
+            “When the red lights turn inward, close your eyes. It recognizes
+            attention as consent.”
+            <cite>Mara Voss, final memo</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Decrypted Intelligence</p>
+          <h2>Files Cleared for Limited Exposure</h2>
+        </div>
+        <div class="faq-list reveal">
+          <details class="glass">
+            <summary>Is the Obsidian Directive real?</summary>
+            <p>
+              Officially, it is a fictional intelligence myth. Unofficially, no
+              agency has accepted responsibility for the files.
+            </p>
+          </details>
+          <details class="glass">
+            <summary>What is inside the Red Vault?</summary>
+            <p>
+              Evidence, artifacts, restricted confessions, and recordings that
+              continue after the equipment is destroyed.
+            </p>
+          </details>
+          <details class="glass">
+            <summary>Who may enter the archive?</summary>
+            <p>
+              Only observers who accept that some discoveries are irreversible.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div class="cta-inner reveal">
+          <p class="eyebrow">Final authorization pending</p>
+          <h2>Enter the Archive</h2>
+          <p>
+            Your clearance has already been forged. The question is whether the
+            archive opens for you, or because of you.
+          </p>
+          <a class="button primary" href="#top">Initiate Descent</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Obsidian Directive // Fictional universe dossier</p>
+      <div class="socials" aria-label="Social links">
+        <a href="#" aria-label="Signal">S</a>
+        <a href="#" aria-label="Cipher">C</a>
+        <a href="#" aria-label="Vault">V</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
